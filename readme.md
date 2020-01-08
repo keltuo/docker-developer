@@ -1,8 +1,8 @@
 # Development
-## Build Image and Run you container 
+## Build Image and Run your container 
 1. Step
-    * create folders in you project `` build/docker/developer``
-    * copy these script files into you project to `` build/docker/developer``
+    * create folders in your project `` build/docker/developer``
+    * copy these script files into your project to `` build/docker/developer``
 2. Step
     * script rights `` chmod +x build/docker/developer/buildAndRun.sh ``
 3. Step
@@ -14,7 +14,7 @@
        
     * Run script `` bash ./build/docker/developer/buildAndRun.sh <<PORT>> <<CONTAINER_NAME>> <<PROJECT_PATH>> <<DOCKER_ENGINE>>``
     * Example 
-        * Go to you project files `` cd /var/www/html/private/john_doe/api-gateway ``
+        * Go to your project files `` cd /var/www/html/private/john_doe/api-gateway ``
         * Run script `` bash ./build/docker/developer/buildAndRun.sh 8100 john_doe_api $PWD ``  $PWD = represent your current PATH
 4. Step
     * use docker helper manager 
