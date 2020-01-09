@@ -28,7 +28,7 @@ rm -rf build/docker/developer/env
 
 echo "RUN SSH AGENT"
 eval $(ssh-agent);
-# run "ssh-add" or ssh-add ~/.ssh/id_rsa (add passhrase to you key)
+# run "ssh-add" or ssh-add ~/.ssh/id_rsa (add passhrase to your key)
 
 
 # build container
