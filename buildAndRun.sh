@@ -23,7 +23,12 @@ DOCKER_COMPOSE_FILE_PATH="${APPLICATION_PATH}/build/docker/developer/docker-comp
 eval "echo \"$(cat build/docker/developer/env.tpl)\"" > build/docker/developer/env
 echo "$(cat build/docker/developer/env; cat build/docker/developer/dcp.tpl)" > build/docker/developer/dcp
 chmod +x build/docker/developer/dcp
+chmod +x build/docker/developer/start.sh
 rm -rf build/docker/developer/env
+
+echo "RUN SSH AGENT"
+eval $(ssh-agent);
+# run "ssh-add" or ssh-add ~/.ssh/id_rsa (add passhrase to you key)
 
 
 # build container
